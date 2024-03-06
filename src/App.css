@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+  color: #000;
+  vertical-align: middle;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  flex: 1;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+}
+.content {
+  text-align: left;
+  padding: 2em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow-y: scroll;
+  background-color: black;
+  background-image: radial-gradient(rgba(0, 150, 0, 0.75), black 120%);
+  color: white;
+  font: 0.9rem Inconsolata, monospace;
+  text-shadow: 0 0 5px #c8c8c8;
+  max-height: 90vh;
+  min-width: 40vw;
+  max-width: 80vw;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(black, 0.15),
+      rgba(black, 0.15) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+    pointer-events: none;
+  }
+}
+
+.content::-webkit-scrollbar {
+  display: none;
+}
+.result {
+  margin: 25px;
+}
+.form-inline {
+  flex: 1;
+  flex-flow: row wrap;
+  align-items: center;
+}
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.label {
+  margin-bottom: 3px;
+  color: #000;
+  flex: 1;
+  text-align: left;
+}
+.input {
+  vertical-align: middle;
+  margin: 5px 15px 5px 0;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 200px;
+  flex: 1;
+}
+.add {
+  margin: 5px 15px 5px 0;
+  padding: 10px;
+  background-color: #8d90a1;
+  border: 1px solid #8d90a1;
+  border-radius: 8px;
+  color: #fff;
+  width: 80px;
+  font-weight: 900;
+  flex: 1;
+}
+.submit {
+  margin: 5px 15px 5px 0;
+  padding: 10px;
+  background-color: #3754e4;
+  border: 1px solid #3754e4;
+  border-radius: 8px;
+  color: #fff;
+  width: 200px;
+  font-weight: 900;
+  flex: 1;
+}
+.error {
+  color: red;
+  background: lightgrey;
+  border-style: solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
