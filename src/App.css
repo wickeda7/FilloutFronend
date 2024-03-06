@@ -45,6 +45,7 @@
   font: 0.9rem Inconsolata, monospace;
   text-shadow: 0 0 5px #c8c8c8;
   max-height: 90vh;
+  min-height: 90vh;
   min-width: 40vw;
   max-width: 80vw;
   &::after {
