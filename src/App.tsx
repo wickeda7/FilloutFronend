@@ -58,7 +58,7 @@ function App() {
     const stringify = qs.stringify({ ...filtetsObject, limit: 10 });
     try {
       const url = `https://fillout-gqua.onrender.com/cLZojxk94ous/filteredResponses?${stringify}`;
-      console.log('url: ', url);
+      // console.log('url: ', url);
       const res = await axios.get(url);
       // const res = await axios.get(`http://localhost:8080/cLZojxk94ous/filteredResponses?${stringify}`);
       setResponse(res.data);
